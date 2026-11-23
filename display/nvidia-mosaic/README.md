@@ -64,6 +64,8 @@ configureMosaic.exe listconfigcmd > restore.bat
 
 执行后，当前目录会生成 `restore.bat`。其中保存的是工具根据**当前已生效 Mosaic 拓扑**生成的重建命令。
 
+> 命令来源说明：`listconfigcmd` 是 NVIDIA Developer Forum 给出的导出当前 display wall 重建命令的方法；它没有出现在当前 2.5.3 随附 readme 的常规命令列表中。因此本手册保留这条已讨论的工作流，但如果未来版本提示未知命令，应先执行 `configureMosaic.exe help` 并重新核对该版本说明，不要盲目改用手写拓扑参数。
+
 ### 方法 B：使用仓库中的导出脚本
 
 将 [export-config.bat](scripts/export-config.bat) 复制到 `configureMosaic.exe` 同一目录，管理员身份运行。脚本会执行同一条 `listconfigcmd` 命令，并在工具目录生成 `restore.bat`。
