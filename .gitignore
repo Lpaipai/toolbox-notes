@@ -1,0 +1,6 @@
+# NVIDIA Mosaic Utility executable (download separately from NVIDIA)
+display/nvidia-mosaic/configureMosaic.exe
+
+# Generated topology restore script is machine-specific
+display/nvidia-mosaic/restore.bat
+display/nvidia-mosaic/scripts/restore.bat
